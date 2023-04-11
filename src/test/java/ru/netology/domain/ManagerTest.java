@@ -1,4 +1,5 @@
 package ru.netology.domain;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -106,7 +107,7 @@ public class ManagerTest {
         manager.addFilm("film5");
         manager.addFilm("film6");
 
-        String[] expected = { "film6", "film5", "film4", "film3", "film2", "film1" };
+        String[] expected = {"film6", "film5", "film4", "film3", "film2", "film1"};
         String[] actual = manager.findLast();
         assertArrayEquals(expected, actual);
     }
